@@ -39,20 +39,16 @@ window.addEventListener("keydown", (event) => {
       textarea.value = textarea.value.slice(0, -1);
       break;
     case "ArrowUp":
-      textarea.selectionStart--;
-      textarea.selectionEnd--;
+      textarea.value += "↑";
       break;
     case "ArrowDown":
-      textarea.selectionStart++;
-      textarea.selectionEnd++;
+      textarea.value += "↓";
       break;
     case "ArrowLeft":
-      textarea.selectionStart--;
-      textarea.selectionEnd--;
+      textarea.value += "←";
       break;
     case "ArrowRight":
-      textarea.selectionStart++;
-      textarea.selectionEnd++;
+      textarea.value += "→";
       break;
   }
 });
@@ -98,20 +94,16 @@ buttons.forEach((button) => {
         textarea.value = textarea.value.slice(0, -1);
         break;
       case "↑":
-        textarea.selectionStart--;
-        textarea.selectionEnd--;
+        textarea.value += "↑";
         break;
       case "↓":
-        textarea.selectionStart++;
-        textarea.selectionEnd++;
+        textarea.value += "↓";
         break;
       case "←":
-        textarea.selectionStart--;
-        textarea.selectionEnd--;
+        textarea.value += "←";
         break;
       case "→":
-        textarea.selectionStart++;
-        textarea.selectionEnd++;
+        textarea.value += "→";
         break;
       default:
         textarea.value += buttonText;
