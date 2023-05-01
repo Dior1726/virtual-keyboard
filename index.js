@@ -7,13 +7,11 @@ window.addEventListener("keydown", (event) => {
   // Loop through all buttons and highlight the button that matches the pressed key
   buttons.forEach((button) => {
     if (button.textContent === key.toUpperCase()) {
-      button.style.backgroundColor = "#ccc";
       textarea.value += button.textContent
       button.classList.add('active')
     }
 
     if (button.id.toUpperCase() === key.toUpperCase()) {
-      button.style.backgroundColor = "#ccc";
       button.classList.add('active')
     }
   });
@@ -59,12 +57,10 @@ window.addEventListener("keyup", (event) => {
   // Loop through all buttons and remove the highlight from the button that matches the released key
   buttons.forEach((button) => {
     if (button.textContent === key.toUpperCase()) {
-      button.style.backgroundColor = "#fff";
       button.classList.remove('active')
     }
 
     if (button.id.toUpperCase() === key.toUpperCase()) {
-      button.style.backgroundColor = "#fff";
       button.classList.remove('active')
     }
   });
