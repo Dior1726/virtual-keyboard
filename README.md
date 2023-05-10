@@ -1,1 +1,0 @@
-#Rs School. Virtual Keyboard task.
